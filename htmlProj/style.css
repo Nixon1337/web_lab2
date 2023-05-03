@@ -1,0 +1,137 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 238, 238);
+}
+
+.container{
+    max-width: 1200px;
+}
+
+.tittle{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.tittle__text{
+    color:rgb(193, 170, 140);
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.tittle-container{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#img-block-1, #img-block-2{
+    width: auto;
+    padding-right: 30px;
+}
+
+.row{
+    flex: 1 1 1;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    gap:20px;
+    width: 300px;
+    height: 300px;
+}
+
+img{
+   max-height:250px;
+   width: 350px; 
+}
+
+.black, .black>*{
+    background-color: rgb(13, 13, 13);
+}
+
+.white,
+.white>* {
+    background-color: rgb(255, 255, 255);
+}
+
+.block__tittle{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.block__more{
+    font-size: 24px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.black>.block__tittle, .black> .block__more{
+    color:rgb(239, 239, 239);
+}
+
+.black>.block__description {
+    color: rgb(200, 200, 200);
+}
+
+.white>.block__tittle,
+.white> .block__more {
+    color: rgb(14, 14, 14);
+}
+
+.white>.block__description {
+    color: rgb(121, 121, 121);
+}
+
+.line{
+    height: 200px;
+    width: 100%;
+    background-color: rgb(146, 125, 48);
+}
+
+.footer{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    color: rgb(239, 239, 239);
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: rgb(146, 125, 48);
+    padding: 20px;
+}
+
+@media (max-width: 1030px) {
+    .block {
+        width: 100%; 
+    }
+    #img-block-1,#img-block-2{
+        margin: 0 auto;
+    }
+}
